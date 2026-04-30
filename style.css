@@ -47,10 +47,85 @@ body{
     margin-right: 20px;
 }
 
+/* banner section style */
 
 
+.banner {
+    max-width: 2000px;
+    background: url(./images/sec-1-img.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    opacity: 90%;
+    height: 600px;
+}
+.ban-right{
+    max-width: 1000px;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    /* right: 50%; */
+}
+.ban-right>h2{
+    padding: 10px 15px;
+    color: white;
+    font-size: 3.5rem;
+    font-family: 'inter',sans-serif;
+    font-weight: 700;
+}
+.ban-right>p{
+    padding: 10px 15px;
+    color: white;
+    font-size: 1rem;
+    font-family: 'inter',sans-serif;
+    font-weight: 300;
 
+    
+}
+.ban-right>a{
+    color: white;
+    background-color: red;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'inter',sans-serif;
+    padding: 10px 20px;
+    text-decoration: none;
+    padding: 10px 15px;
+    /* margin-top: 20px; */
+    border-radius: 10px;
+}
 
+.ban-card-sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    opacity: 90%;
+}
+.ban-card1{
+    min-width: 200px;
+    width: 20%;
+    margin: 10px;
+}
+.ban-card1>p{
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: 'dm-mono';
+}
+.ban-card1>h5{
+    color: white;
+    font-family: 'inter',sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+}
+.ban-card1>h5>i{
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px;
+}
 
 
 
@@ -179,5 +254,63 @@ body{
 @media (max-width: 480px) {
     .left-ban input {
         width: 100%;
+    }
+}
+
+/* banner secyion style */
+  
+
+@media (max-width: 480px) {
+    .banner {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .ban-right {
+        position: static;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .ban-right>h2 {
+        font-size: 1.8rem;
+    }
+
+    .ban-right>p {
+        font-size: 0.9rem;
+    }
+
+    .ban-card-sec {
+        flex-direction: column;
+    }
+
+    .ban-card1 {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .ban-right>h2 {
+        font-size: 2.5rem;
+    }
+
+    .ban-card1 {
+        width: 45%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .ban-right {
+        max-width: 80%;
+    }
+
+    .ban-card1 {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .ban-right>h2 {
+        font-size: 4rem;
     }
 }
