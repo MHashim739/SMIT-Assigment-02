@@ -9,7 +9,7 @@ body{
     justify-content: space-between;
     position: relative;
     background-color: #000;
-    max-width: 1600px;
+    max-width: 1800px;
 }
 .left-ban{
 
@@ -24,6 +24,10 @@ body{
     font-size: 30px;
     font-family: 'inter',sans-serif;
 }
+.left-ban input {
+    padding: 6px;
+    max-width: 150px;
+}
 .center-ban>img{
     max-width: 300px;
     height: 70px;
@@ -34,11 +38,146 @@ body{
     padding: 2%;
 }
 .right-ban >a{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
     font-family: 'inter',sans-serif;
     color: white;
     text-decoration: none;
     list-style: none;
-    margin: 1%;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header section responsive */
+
+/* Default (Desktop already ok hai) */
+
+
+/* ===== Tablets (768px tak) ===== */
+@media (max-width: 768px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left-ban{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .center-ban>img{
+        max-width: 220px;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .right-ban{
+        padding: 10px;
+    }
+
+    .right-ban>a{
+        font-size: 16px;
+        margin-right: 10px;
+    }
+}
+
+
+/* ===== Mobile (480px tak) ===== */
+@media (max-width: 480px) {
+    .left-ban{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .left-ban>h3{
+        font-size: 22px;
+        padding-left: 0;
+    }
+
+    .center-ban>img{
+        max-width: 180px;
+    }
+
+    .right-ban{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right-ban>a{
+        display: block;
+        margin: 5px 0;
+        font-size: 14px;
+    }
+}
+
+
+/* ===== Very Small Devices (360px) ===== */
+@media (max-width: 360px) {
+    .left-ban>h3{
+        font-size: 18px;
+    }
+
+    .center-ban>img{
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .left-ban input {
+        width: 100%;
+    }
 }
