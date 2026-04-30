@@ -51,7 +51,7 @@ body{
 
 
 .banner {
-    max-width: 2000px;
+    max-width: 100%;
     background: url(./images/sec-1-img.webp);
     background-size: cover;
     background-position: center;
