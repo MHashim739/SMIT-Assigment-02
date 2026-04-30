@@ -127,6 +127,179 @@ body{
     padding: 5px;
 }
 
+/* sec2 start */
+
+/* Container Layout */
+.nasa-layout {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  background-color: #fff; /* Main background is white */
+}
+
+/* Top Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr; /* Ratios for Large, Medium, and Stack */
+  gap: 15px;
+  height: 500px;
+}
+
+.side-stack {
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Card General Styling */
+.card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 60%);
+}
+
+.card-content {
+  position: relative;
+  z-index: 2;
+}
+
+.label { font-size: 10px; font-weight: bold; letter-spacing: 1px; display: block; margin-bottom: 20px; }
+.read-time { font-size: 11px; color: #ccc; margin-bottom: 5px; }
+.card h2 { font-size: 22px; line-height: 1.2; margin: 0; }
+.card h3 { font-size: 16px; margin: 0; }
+
+/* Bottom Row Styling */
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  color: #333;
+  gap: 20px;
+}
+
+.mini-card {
+  display: flex;
+  align-items: center;
+  width: 25%;
+}
+.card1-con{
+    
+    margin: 10px;
+    min-width: 400px;
+}
+.card2-con{
+    margin: 10px;
+    min-width: 300px;
+    min-height: 400px;
+    height: 50%;
+}
+
+.round-thumb {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.mini-text h4 {
+  font-size: 13px;
+  margin: 5px 0;
+  color: #000;
+}
+
+.type-tag {
+  font-size: 10px;
+  font-weight: bold;
+  color: #666;
+  text-transform: uppercase;
+}
+
+/* Main Horizontal Container */
+.news-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual Card */
+.news-card {
+  display: flex;
+  align-items: flex-start;
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Circle Image */
+.image-wrapper {
+  margin-right: 15px;
+}
+
+.circle-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Text Content Area */
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.read-time {
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  color: #000;
+}
+
+/* Footer Labels */
+.footer {
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  color: #666;
+  font-weight: 500;
+}
+
+.icon {
+  margin-right: 5px;
+  font-size: 12px;
+}
+.news-container{
+    margin-top: 5%;
+}
+
 
 
 
