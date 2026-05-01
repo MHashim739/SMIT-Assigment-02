@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 0px;
     padding: 0px;
@@ -132,7 +135,7 @@ body{
 /* Container Layout */
 .nasa-layout {
   max-width: 1200px;
-  margin: 0 auto;
+  margin:0 auto ;
   font-family: 'Inter', sans-serif;
   color: white;
   background-color: #fff; /* Main background is white */
@@ -198,15 +201,16 @@ body{
   width: 25%;
 }
 .card1-con{
-    
+    width: 100%;
     margin: 10px;
-    min-width: 400px;
+    min-width: 0;
 }
 .card2-con{
-    margin: 10px;
-    min-width: 300px;
-    min-height: 400px;
-    height: 50%;
+     margin: 10px;
+    width: 100%;
+    min-width: 0;
+    /* min-height: 400px; */
+    /* height: 50%; */
 }
 
 .round-thumb {
@@ -485,5 +489,153 @@ body{
 @media (min-width: 1400px) {
     .ban-right>h2 {
         font-size: 4rem;
+    }
+}
+ 
+/* section 3 respponsive */
+
+/* ========== RESPONSIVE START ========== */
+
+/* ----------- Mobile (iPhone SE, XR, Pixel, small phones) ----------- */
+@media (max-width: 576px) {
+
+    .banner {
+        height: 400px;
+    }
+
+    .ban-right {
+        top: 5%;
+        left: 5%;
+        max-width: 90%;
+    }
+
+    .ban-right>h2 {
+        font-size: 1.8rem;
+    }
+
+    .ban-right>p {
+        font-size: 0.9rem;
+    }
+
+    .ban-right>a {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+
+    .ban-card-sec {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .ban-card1 {
+        width: 100%;
+    }
+
+    /* GRID */
+    .grid-container {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .side-stack {
+        flex-direction: column;
+    }
+
+    /* NEWS */
+    .news-container {
+        flex-direction: column;
+    }
+
+    .news-card {
+        width: 100%;
+    }
+
+    .mini-card {
+        width: 100%;
+    }
+}
+
+/* ----------- Tablets (iPad Mini, Air, Surface Duo) ----------- */
+@media (min-width: 577px) and (max-width: 991px) {
+
+    .banner {
+        height: 500px;
+    }
+
+    .ban-right>h2 {
+        font-size: 2.5rem;
+    }
+
+    .ban-card-sec {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .ban-card1 {
+        width: 45%;
+    }
+
+    /* GRID */
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+    }
+
+    .side-stack {
+        flex-direction: column;
+    }
+
+    /* NEWS */
+    .news-container {
+        flex-wrap: wrap;
+    }
+
+    .news-card {
+        width: 48%;
+    }
+
+    .mini-card {
+        width: 48%;
+    }
+}
+
+/* ----------- Large Devices (iPad Pro, Surface Pro, Fold devices) ----------- */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    .ban-card-sec {
+        flex-wrap: wrap;
+    }
+
+    .ban-card1 {
+        width: 30%;
+    }
+
+    .grid-container {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .news-container {
+        flex-wrap: wrap;
+    }
+
+    .news-card {
+        width: 30%;
+    }
+}
+
+/* ----------- Extra Large (Desktop, Fold, Nest Hub Max) ----------- */
+@media (min-width: 1201px) {
+
+    .grid-container {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    .news-container {
+        flex-wrap: nowrap;
+    }
+
+    .news-card {
+        width: 25%;
     }
 }
