@@ -364,7 +364,7 @@ body{
     gap: 10px;
     margin-top: 50px;
 }
-.sec--5>h3{
+.sec-5-h3>h3{
     margin-top: 30px;
     color: #000;
     font-size: 3rem;
@@ -406,6 +406,541 @@ body{
 
 .box4{
     background-image: url(./images/sec-5-img4.webp);
+}
+
+/* sec 6 style */
+.hero-sec-6{
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    margin-top: 30px;
+    max-width: 1800px;
+    height: auto;
+    /* max-width: 2000px;
+    max-height: 1000px; */
+    display: flex;
+    background-color: rgb(243, 239, 239);
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-left{
+    max-width: 400px;
+    height: auto;
+
+}
+.hero-left>h3{
+     font-size: 2.5rem;
+    font-family: 'inter',sans-serif;
+    font-weight: 700;
+    color: #000;
+}
+.hero-left>p{
+     font-size: 1.2rem;
+    font-family: 'inter',sans-serif;
+    font-weight: 400;
+    color: #000;
+}
+.hero-left>a{
+     font-size: 2rem;
+    font-family: 'inter',sans-serif;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+}
+.hero-left>a>i{
+     font-size: 2rem;
+    color: red;
+}
+.hero-right{
+     max-width: 500px;
+    height: auto;}
+.hero-right>img{
+    max-width: 300px;
+    border-radius: 3px;
+}
+
+/* sec 7 style */
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+}
+
+/* Grid Layout */
+.gallery-grid {
+    display: grid;
+    gap: 20px;
+    /* Default for Mobile: 1 column */
+    grid-template-columns: 1fr;
+}
+
+/* Tablet / Foldable (iPad, Galaxy Fold) */
+@media (min-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop / Large Tablets (Surface Pro, Nest Hub Max) */
+@media (min-width: 1100px) {
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Card Styling */
+.gallery-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-mosaic {
+    display: flex;
+    gap: 4px;
+    height: 250px; /* Standard height for the mosaic */
+}
+
+.large-img {
+    flex: 2;
+    background-size: cover;
+    background-position: center;
+}
+
+.side-stack {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.small-img {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-info {
+    margin-top: 15px;
+}
+
+.card-info h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+.card-info p {
+    font-size: 0.75rem;
+    color: #666;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* sec 7 style */
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    /* Replace the URL below with your actual image path */
+    background-image: url('./images/sec-7-img.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+}
+
+/* Dark overlay to ensure text readability on bright nebulae */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.2) 100%);
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content-box {
+    max-width: 500px;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem); /* Scales between mobile and desktop */
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.description {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    max-width: 400px;
+}
+
+.privacy {
+    font-size: 0.9rem;
+    color: #cccccc;
+    margin-bottom: 2rem;
+}
+
+.privacy a {
+    color: #cccccc;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* Button Styling */
+.signup-btn {
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: transform 0.2s ease;
+}
+
+.signup-btn:hover {
+    transform: translateX(5px);
+}
+
+.arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e03a3e; /* NASA Red */
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-left: 10px;
+    font-size: 0.8rem;
+}
+
+/* Responsive Adjustments for Specific Devices */
+
+/* iPhone SE & Smaller Phones */
+@media (max-width: 375px) {
+    h1 { font-size: 1.8rem; }
+    .description { font-size: 1rem; }
+    .content-box { text-align: left; }
+}
+
+/* Foldables (Galaxy Z Fold 5 / Surface Duo) */
+@media (max-width: 1000px) and (orientation: landscape) {
+    .hero-section { height: auto; min-height: 100vh; padding: 40px 0; }
+    h1 { margin-bottom: 1rem; }
+}
+
+/* Tablets (iPad, Surface Pro) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .content-box { max-width: 60%; }
+}
+
+/* Large Displays (Nest Hub Max) */
+@media (min-width: 1200px) {
+    .container { width: 80%; }
+    .content-box { max-width: 600px; }
+}
+
+/* sec 8 style */
+
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f6f6f6;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+.nasa-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Flexbox Wrapper: Stacks on mobile, Rows on Desktop */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Text Styling */
+.eyebrow {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+    line-height: 1.1;
+    font-weight: 800;
+}
+
+.lead-text {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.body-text {
+    margin-bottom: 30px;
+}
+
+.cta {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.arrow {
+    display: inline-block;
+    background: #e03c31; /* NASA Red */
+    color: white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    margin-left: 10px;
+    font-size: 0.9rem;
+}
+
+/* Image & Caption Styling */
+.image-column img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: #555;
+}
+
+/* --- RESPONSIVENESS --- */
+
+/* For Tablets and Larger (iPad, Surface, Nest Hub, Laptops) */
+@media (min-width: 768px) {
+    .content-wrapper {
+        flex-direction: row; /* Switch to side-by-side */
+        align-items: flex-start;
+    }
+
+    .text-column {
+        flex: 1;
+        padding-right: 40px;
+    }
+
+    .image-column {
+        flex: 1;
+    }
+
+    h1 {
+        font-size: 3.5rem; /* Larger font for larger screens */
+    }
+}
+
+/* Specific fix for Foldables (Surface Duo, Z Fold 5) */
+@media (min-width: 500px) and (max-width: 767px) {
+    .nasa-container {
+        padding: 40px;
+    }
+}
+
+
+/* sec 9 responsive */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Flexbox Grid */
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Default: 1 Column (iPhone SE, XR, 12 Pro, 14 Pro Max, Pixel 7, S8+, S20 Ultra, A51/71) */
+.card {
+    flex: 1 1 100%;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* Overlay for text readability */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(transparent 60%, rgba(0,0,0,0.8));
+}
+
+.card-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    z-index: 1;
+}
+
+.card-content h3 {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff3e3e; /* NASA-ish red */
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+/* --- Responsive Breakpoints --- */
+
+/* 2 Columns: iPad Mini, Surface Duo, Galaxy Z Fold 5 (folded), Zenbook Fold (folded) */
+@media (min-width: 600px) {
+    .card {
+        flex: 1 1 calc(50% - 15px);
+    }
+}
+
+/* 4 Columns: iPad Air/Pro, Surface Pro 7, Nest Hub, Nest Hub Max, Zenbook Fold (unfolded) */
+@media (min-width: 1024px) {
+    .card {
+        flex: 1 1 calc(25% - 15px);
+        height: 450px; /* Taller cards for bigger screens */
+    }
+}
+
+/* card sec 2 */
+
+.container {
+  display: grid;
+  /* This line handles the responsiveness for ALL devices listed */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.card {
+  height: 450px; /* Standard portrait height */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* Gradient for text readability */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+h2 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  max-width: 70%;
+}
+
+.arrow-btn {
+  background-color: #ff4d4d; /* Bright red from your image */
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* Adjustments for smaller phones (iPhone SE) */
+@media (max-width: 350px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    height: 350px;
+  }
+}
+
+/* Adjustments for Foldable devices (Z Fold / Zenbook) */
+@media (min-width: 600px) and (max-width: 900px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 
@@ -540,344 +1075,267 @@ body{
 /* banner secyion style */
   
 
-@media (max-width: 480px) {
+/* --- RESPONSIVE OVERRIDES --- */
+
+/* 1. Universal adjustments for smaller screens (Phones & Foldables) 
+   Covers: iPhone SE, XR, 12 Pro, 14 Pro Max, Pixel 7, S8+, S20 Ultra, A51/71, Z Fold 5 */
+@media (max-width: 768px) {
     .banner {
         height: auto;
-        padding: 40px 0;
+        min-height: 500px;
+        padding-bottom: 40px;
     }
 
     .ban-right {
-        position: static;
-        max-width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 40px 20px;
         text-align: center;
     }
 
-    .ban-right>h2 {
-        font-size: 1.8rem;
-    }
-
-    .ban-right>p {
-        font-size: 0.9rem;
+    .ban-right > h2 {
+        font-size: 2.2rem; /* Scaled down for mobile */
     }
 
     .ban-card-sec {
-        flex-direction: column;
+        flex-direction: column; /* Stack cards vertically */
+        padding: 20px 0;
     }
 
     .ban-card1 {
-        width: 90%;
-    }
-}
-
-@media (max-width: 768px) {
-    .ban-right>h2 {
-        font-size: 2.5rem;
+        width: 80%;
+        text-align: center;
+        margin-bottom: 20px;
     }
 
-    .ban-card1 {
-        width: 45%;
-    }
-}
-
-@media (max-width: 1024px) {
-    .ban-right {
-        max-width: 80%;
-    }
-
-    .ban-card1 {
-        width: 30%;
-    }
-}
-
-@media (min-width: 1400px) {
-    .ban-right>h2 {
-        font-size: 4rem;
-    }
-}
- 
-/* section 3 respponsive */
-
-/* ========== RESPONSIVE START ========== */
-
-/* ----------- Mobile (iPhone SE, XR, Pixel, small phones) ----------- */
-@media (max-width: 576px) {
-
-    .banner {
-        height: 400px;
-    }
-
-    .ban-right {
-        top: 5%;
-        left: 5%;
-        max-width: 90%;
-    }
-
-    .ban-right>h2 {
-        font-size: 1.8rem;
-    }
-
-    .ban-right>p {
-        font-size: 0.9rem;
-    }
-
-    .ban-right>a {
-        font-size: 1rem;
-        padding: 8px 12px;
-    }
-
-    .ban-card-sec {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
-    }
-
-    .ban-card1 {
-        width: 100%;
-    }
-
-    /* GRID */
+    /* Sec 2: NASA Layout Grid */
     .grid-container {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        height: auto; /* Allow content to dictate height */
+    }
+
+    .card {
+        height: 300px; /* Fixed height for mobile cards */
+    }
+
+    /* Bottom Row / News Container */
+    .bottom-row, .news-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .mini-card, .news-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+/* 2. Tablet & Foldable Specifics 
+   Covers: iPad Mini, iPad Air, Surface Pro 7, Asus Zenbook Fold, Nest Hub */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .ban-right > h2 {
+        font-size: 3rem;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr; /* 2 columns instead of 3 */
         height: auto;
     }
 
     .side-stack {
-        flex-direction: column;
+        grid-column: span 2; /* Move stack to bottom of grid */
+        flex-direction: row;
     }
 
-    /* NEWS */
+    .side-stack .card {
+        flex: 1;
+        height: 250px;
+    }
+
     .news-container {
-        flex-direction: column;
-    }
-
-    .news-card {
-        width: 100%;
-    }
-
-    .mini-card {
-        width: 100%;
-    }
-}
-
-/* ----------- Tablets (iPad Mini, Air, Surface Duo) ----------- */
-@media (min-width: 577px) and (max-width: 991px) {
-
-    .banner {
-        height: 500px;
-    }
-
-    .ban-right>h2 {
-        font-size: 2.5rem;
-    }
-
-    .ban-card-sec {
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .ban-card1 {
-        width: 45%;
-    }
-
-    /* GRID */
-    .grid-container {
-        grid-template-columns: 1fr 1fr;
-        height: auto;
-    }
-
-    .side-stack {
-        flex-direction: column;
-    }
-
-    /* NEWS */
-    .news-container {
-        flex-wrap: wrap;
-    }
-
     .news-card {
-        width: 48%;
-    }
-
-    .mini-card {
-        width: 48%;
+        flex: 0 0 45%; /* Two cards per row on tablets */
     }
 }
 
-/* ----------- Large Devices (iPad Pro, Surface Pro, Fold devices) ----------- */
-@media (min-width: 992px) and (max-width: 1200px) {
-
-    .ban-card-sec {
-        flex-wrap: wrap;
-    }
-
-    .ban-card1 {
-        width: 30%;
-    }
-
-    .grid-container {
-        grid-template-columns: 2fr 1fr;
-    }
-
-    .news-container {
-        flex-wrap: wrap;
-    }
-
-    .news-card {
-        width: 30%;
+/* 3. Large Screens / Hub Max 
+   Covers: iPad Pro, Nest Hub Max, Surface Pro 7 (Landscape) */
+@media (min-width: 1025px) {
+    .nasa-layout, .news-container {
+        max-width: 1200px;
+        margin: 0 auto;
     }
 }
 
-/* ----------- Extra Large (Desktop, Fold, Nest Hub Max) ----------- */
-@media (min-width: 1201px) {
-
-    .grid-container {
-        grid-template-columns: 2fr 1fr 1fr;
+/* 4. Dual Screen & Special Fixes 
+   Covers: Surface Duo & Galaxy Z Fold (Open state) */
+@media (max-width: 600px) {
+    .circle-img {
+        width: 60px;
+        height: 60px;
     }
-
-    .news-container {
-        flex-wrap: nowrap;
-    }
-
-    .news-card {
-        width: 25%;
+    
+    .title {
+        font-size: 14px;
     }
 }
 
 /* sec 4 responsive */
 
-/* iPhone SE */
-@media (max-width: 375px){
-    .sec-4{
-        min-height: 60vh;
-        justify-content: center;
-        text-align: center;
+/* Tablet Styles (iPad Mini, iPad Air, Surface Pro) */
+@media (min-width: 768px) {
+    .sec-4 {
+        height: 700px; /* Return to your preferred height */
+        align-items: flex-start; /* Reset vertical alignment */
     }
-    .hero-sec1{
-        margin-left: 0;
-        padding: 0 10px;
+
+    .hero-sec1 {
+        position: absolute;
+        top: 25%;
+        margin-left: 40px;
+    }
+
+    .hero-sec1 > h3 {
+        font-size: 2.5rem;
+    }
+
+    .hero-sec1 > p {
+        font-size: 1.3rem;
     }
 }
 
-/* iPhone XR, 12 Pro, Pixel 7, Galaxy A51/71 */
-@media (max-width: 414px){
-    .hero-sec1{
-        margin-left: 15px;
-        max-width: 90%;
+/* Large Screens & Hubs (iPhone 14 Pro Max, Nest Hub Max, Zenbook Fold) */
+@media (min-width: 1024px) {
+    .hero-sec1 {
+        top: 30%;
+        max-width: 800px;
+    }
+
+    .hero-sec1 > h3 {
+        font-size: 3rem; /* Your original size */
+    }
+
+    .hero-sec1 > p {
+        font-size: 1.5rem;
+    }
+
+    .hero-sec1 > a {
+        font-size: 2rem;
     }
 }
 
-/* Galaxy S8+, S20 Ultra */
-@media (max-width: 480px){
-    .hero-sec1{
-        margin-left: 15px;
-    }
-}
-
-/* iPhone 14 Pro Max */
-@media (max-width: 430px){
-    .hero-sec1{
-        margin-left: 20px;
-    }
-}
-
-/* Tablets (iPad Mini, Air, Pro) */
-@media (max-width: 1024px){
-    .hero-sec1{
-        margin-left: 25px;
-        max-width: 600px;
-    }
-}
-
-/* Surface Pro 7 */
-@media (max-width: 912px){
-    .hero-sec1{
-        max-width: 650px;
-    }
-}
-
-/* Surface Duo / Fold devices */
-@media (max-width: 540px){
-    .sec-4{
-        text-align: center;
-        justify-content: center;
-    }
-    .hero-sec1{
-        margin-left: 0;
-        padding: 0 15px;
-    }
-}
-
-/* Galaxy Z Fold 5, Zenbook Fold */
-@media (max-width: 768px){
-    .hero-sec1{
-        max-width: 90%;
-    }
-}
-
-/* Nest Hub */
-@media (max-width: 1024px) and (max-height: 600px){
-    .sec-4{
-        min-height: 50vh;
-    }
-}
-
-/* Nest Hub Max */
-@media (max-width: 1280px) and (max-height: 800px){
-    .sec-4{
-        min-height: 55vh;
+/* Specific fix for Foldables (Galaxy Z Fold 5) when unfolded */
+@media (min-width: 600px) and (max-width: 900px) and (orientation: portrait) {
+    .hero-sec1 > h3 {
+        font-size: 2.2rem;
     }
 }
 
 /* sec 5 responsive */
 
-/* =========================
-   📱 RESPONSIVE DESIGN
-   ========================= */
+/* --- RESPONSIVE QUERIES --- */
 
-/* Large tablets (iPad Pro, Surface Pro 7) */
+/* Laptops & Large Tablets (iPad Pro, Surface Pro, Zenbook Fold) */
 @media (max-width: 1024px) {
     .sec-5 {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
     }
-
-    .box {
-        height: 400px;
+    .sec-5-h3 > h3 {
+        font-size: 2.5rem;
     }
 }
 
-/* Tablets (iPad Air, iPad Mini, Galaxy Fold open) */
+/* Tablets & Foldables (iPad Mini/Air, Nest Hub, Galaxy Fold) */
 @media (max-width: 768px) {
-    .sec-5 {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .box {
-        height: 350px;
+        height: 400px; /* Slightly shorter boxes for smaller screens */
+    }
+    .box > h3 {
+        font-size: 2rem;
+        margin-right: 0; /* Center text fully on smaller screens */
     }
 }
 
-/* Mobile (iPhone XR, 12, 14 Pro Max, Pixel 7, Galaxy S20 Ultra etc.) */
+/* Mobile Devices (iPhone 14 Pro Max, Pixel 7, Samsung S20, A51, etc.) */
 @media (max-width: 480px) {
     .sec-5 {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr; /* 1 column stack */
+        margin-top: 20px;
     }
+    .sec-5-h3 > h3 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .box {
+        height: 350px;
+        margin: 0 5px;
+    }
+    .box > h3 {
+        font-size: 1.8rem;
+    }
+}
 
+/* Small Phones (iPhone SE) */
+@media (max-width: 375px) {
     .box {
         height: 300px;
     }
+    .box > h3 {
+        font-size: 1.5rem;
+    }
+}
+/* sec 6 responsive */
+@media (min-width: 768px) {
+    .hero-sec-6 {
+        flex-direction: row; /* Side-by-side for tablets and open folds */
+        justify-content: space-around;
+        padding: 40px;
+        text-align: left;
+    }
 
-    .sec-5 > h3 {
-        font-size: 2rem;
+    .hero-left {
+        max-width: 45%;
+    }
+
+    .hero-right {
+        max-width: 45%;
+        margin-top: 0;
+    }
+
+    .hero-left > h3 {
+        font-size: 2.2rem;
     }
 }
 
-/* Very small devices (iPhone SE, Nest Hub small view) */
-@media (max-width: 360px) {
-    .box {
-        height: 250px;
+/* --- Large Displays (iPad Pro, Surface Pro 7, Nest Hub, Nest Hub Max) --- */
+@media (min-width: 1024px) {
+    .hero-sec-6 {
+        padding: 0 10%; /* Adds breathing room on very wide displays */
     }
 
-    .box > h3 {
-        font-size: 1.8rem;
+    .hero-left > h3 {
+        font-size: 3rem;
+    }
+
+    .hero-left > p {
+        font-size: 1.2rem;
+    }
+
+    .hero-right > img {
+        max-width: 550px;
+    }
+}
+
+/* --- Smart Displays (Nest Hub Max / Asus Zenbook Fold Full Screen) --- */
+@media (min-width: 1280px) {
+    .hero-left {
+        max-width: 600px;
     }
 }
