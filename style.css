@@ -557,6 +557,310 @@ body{
     margin: 40px;
 }
 
+/* sec 9 style */
+
+#gallery-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+/* Individual Card Styling */
+#card-1, #card-2, #card-3, #card-4, 
+#card-5, #card-6, #card-7, #card-8 {
+  position: relative;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Dark gradient overlay for text readability */
+#card-1::after, #card-2::after, #card-3::after, #card-4::after,
+#card-5::after, #card-6::after, #card-7::after, #card-8::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(transparent 60%, rgba(0,0,0,0.8));
+}
+
+/* Content wrapper */
+#content-1, #content-2, #content-3, #content-4,
+#content-5, #content-6, #content-7, #content-8 {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Title Styling */
+#title-1, #title-2, #title-3, #title-4,
+#title-5, #title-6, #title-7, #title-8 {
+  color: white;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  flex-grow: 1;
+}
+
+/* Circle Icon Styling */
+#icon-1, #icon-2, #icon-3, #icon-4,
+#icon-5, #icon-6, #icon-7, #icon-8 {
+  background-color: #ff3b3b;
+  color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+/* --- RESPONSIVE QUERIES --- */
+
+/* Tablets (iPad, Surface Pro, Zenbook Fold, Nest Hub) */
+@media (max-width: 1024px) {
+  #gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large Mobile / Small Tablets (Galaxy Z Fold 5, iPad Mini) */
+@media (max-width: 768px) {
+  #gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  #card-1, #card-2, #card-3, #card-4, 
+  #card-5, #card-6, #card-7, #card-8 {
+    height: 300px;
+  }
+}
+
+/* Standard Mobile (iPhone 14 Pro Max, Pixel 7, S20 Ultra, A51) */
+@media (max-width: 480px) {
+  #gallery-container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+  #title-1, #title-2, #title-3, #title-4,
+  #title-5, #title-6, #title-7, #title-8 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Smallest Mobile (iPhone SE, S8+) */
+@media (max-width: 375px) {
+  #card-1, #card-2, #card-3, #card-4, 
+  #card-5, #card-6, #card-7, #card-8 {
+    height: 250px;
+  }
+}
+
+
+/* footer sec style */
+ .nasa-footer {
+    background-color: #000;
+    color: #fff;
+    padding: 60px 20px 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Top Section Layout */
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.footer-brand {
+    flex: 1 1 300px;
+}
+
+.footer-logo {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.footer-brand h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.footer-brand p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.mission-link {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 0.9rem;
+}
+
+.join-us {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.arrow-circle {
+    background-color: #f64137;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+
+/* Middle Link Grid */
+.footer-links-grid {
+    display: flex;
+    gap: 50px;
+    flex: 2 1 400px;
+}
+
+.link-col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.link-col a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.link-col a:hover {
+    text-decoration: underline;
+}
+
+.live-badge {
+    border: 1px solid #fff;
+    font-size: 0.6rem;
+    padding: 1px 4px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+/* Social Section */
+.footer-social {
+    flex: 1 1 200px;
+}
+
+.footer-social h3 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    width: 35px;
+    height: 35px;
+    background-color: #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #555;
+}
+
+.sub-link {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/* Divider */
+.footer-divider {
+    border: 0;
+    border-top: 1px solid #333;
+    margin: 40px 0 20px;
+}
+
+/* Bottom Legal Section */
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.legal-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 25px;
+}
+
+.legal-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.meta-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+.meta-info strong {
+    color: #ddd;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .footer-links-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .footer-top {
+        flex-direction: column;
+    }
+}
+
+
+
 
 
 
@@ -972,5 +1276,57 @@ body{
 @media (max-width: 1024px){
     .sec-7{
         padding: 60px 30px;
+    }
+}
+
+/* sec 8 responsive */
+
+/* ========================= */
+/* 📱📱 MEDIUM DEVICES */
+/* ========================= */
+@media (min-width: 768px) {
+    .sec-8 {
+        justify-content: space-between;
+        padding: 40px;
+    }
+
+    .hero-sec-8 {
+        width: 50%;
+        text-align: left;
+    }
+
+    .hero-sec8 {
+        width: 50%;
+    }
+
+    .hero-sec8 > img {
+        max-width: 400px;
+    }
+}
+
+/* ========================= */
+/* 💻 LARGE DEVICES */
+/* ========================= */
+@media (min-width: 1024px) {
+    .hero-sec-8 > h3 {
+        font-size: 2.5rem;
+    }
+
+    .hero-sec-8 > p {
+        font-size: 1.2rem;
+    }
+
+    .hero-sec-8 > a {
+        font-size: 1.5rem;
+    }
+}
+
+/* ========================= */
+/* 🖥️ EXTRA LARGE */
+/* ========================= */
+@media (min-width: 1440px) {
+    .sec-8 {
+        max-width: 1800px;
+        margin: auto;
     }
 }
