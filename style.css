@@ -504,8 +504,58 @@ body{
 }
 
 
+/* sec 8 style */
 
+.sec-8{
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    margin-top: 30px;
+    max-width: 1800px;
+    min-height: 500px;
+    /* max-width: 2000px;
+    max-height: 1000px; */
+    display: flex;
+    background-color: rgb(243, 239, 239);
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-sec-8{
+    max-width: 600px;
+    height: auto;
+    margin: 40px;
 
+}
+.hero-sec-8>h3{
+     font-size: 2.5rem;
+    font-family: 'inter',sans-serif;
+    font-weight: 700;
+    color: #000;
+}
+.hero-sec-8>p{
+     font-size: 1.2rem;
+    font-family: 'inter',sans-serif;
+    font-weight: 400;
+    color: #000;
+}
+.hero-sec-8>a{
+     font-size: 2rem;
+    font-family: 'inter',sans-serif;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+}
+.hero-sec-8>a>i{
+     font-size: 2rem;
+    color: red;
+}
+.hero-sec8{
+     max-width: 500px;
+    height: auto;}
+.hero-sec8>img{
+    max-width: 400px;
+    border-radius: 3px;
+    margin: 40px;
+}
 
 
 
